@@ -386,8 +386,31 @@
                <use href="./images/svg/sprite.svg#close"></use>
             </svg>
          </button>
+         <form action="#" class="modal-form">
+            <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>   
+            <label class="form-field">
+               Имя
+               <input type="text" class="form-input" name="user-name">
+            </label>
+            <label class="form-field">
+               Телефон
+               <input type="tel" class="form-input" name="user-phone">
+            </label>
+            <label class="form-field">
+               Почта
+               <input type="email" class="form-input" name="user-mail">
+            </label>
+            <label class="form-field">
+               Комментарий
+               <textarea name="user-message"></textarea>
+            </label>
+            <input type="checkbox" name="user-policy" value="accept-policy" class="form-policy">
+            <label class="form-policy-text">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+            <button type="submit" class="form-btn">Отправить</button>
+         </form>
       </div>
    </div>
+   <!-- ---------------------------------- end modal window -------------------------------- -->
 
    <script src="./js/modal.js"></script>
 </body>
