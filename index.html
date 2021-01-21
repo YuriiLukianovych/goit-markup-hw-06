@@ -373,6 +373,11 @@
                   </li>
                </ul>
             </div>
+            <form action="#" class="footer-form">
+               <p class="followus-title">Подпишитесь на рассылку</p>
+               <input type="email" class="footer-form-input" name="user-mail" placeholder="E-mail">
+               <button type="submit" class="form-btn subscription">Подписаться</button>
+            </form>
          </div>
       </div>
    </footer>
@@ -391,31 +396,37 @@
             <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>   
             <label class="form-field">
                Имя
-               <input type="text" class="form-input" name="user-name">
-               <svg class="form-icon">
-                  <use href="./images/svg/sprite.svg#form-name"></use>
-               </svg>
+               <span class="form-input-wrapper">
+                  <input type="text" class="form-input" name="user-name">
+                  <svg class="form-icon">
+                     <use href="./images/svg/sprite.svg#form-name"></use>
+                  </svg>
+               </span>
             </label>
             <label class="form-field">
                Телефон
-               <input type="tel" class="form-input" name="user-phone">
-               <svg class="form-icon">
-                  <use href="./images/svg/sprite.svg#form-tel"></use>
-               </svg>
+               <span class="form-input-wrapper">
+                  <input type="tel" class="form-input" name="user-phone">
+                  <svg class="form-icon">
+                     <use href="./images/svg/sprite.svg#form-tel"></use>
+                  </svg>
+               </span>
             </label>
             <label class="form-field">
                Почта
-               <input type="email" class="form-input" name="user-mail">
-               <svg class="form-icon">
-                  <use href="./images/svg/sprite.svg#form-email"></use>
-               </svg>
+               <span class="form-input-wrapper">
+                  <input type="email" class="form-input" name="user-mail">
+                  <svg class="form-icon">
+                     <use href="./images/svg/sprite.svg#form-email"></use>
+                  </svg>
+               </span>
             </label>
             <label class="form-field">
                Комментарий
-               <textarea name="user-message"></textarea>
+               <textarea class="form-user-message" name="user-message" placeholder="Введите текст"></textarea>
             </label>
-            <input type="checkbox" name="user-policy" value="accept-policy" class="form-policy">
-            <label class="form-policy-text">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+            <input id="user-policy" type="checkbox" name="user-policy" value="accept-policy" class="form-policy visually-hidden">
+            <label for="user-policy" class="form-policy-text">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
             <button type="submit" class="form-btn">Отправить</button>
          </form>
          <!-- ---------- END FORM ---------- -->
